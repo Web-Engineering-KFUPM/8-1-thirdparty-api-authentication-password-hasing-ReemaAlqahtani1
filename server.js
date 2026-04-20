@@ -350,6 +350,7 @@ app.get("/weather", async (req, res) => {
       raw: data
     });
   }catch (err) {
+    
     return res.status(500).json({ error: "Server error during weather fetch" });
   }
 });
